@@ -2,6 +2,7 @@ package com.johnson4droid.aosp.examples.eventbus;
 
 import android.app.Activity;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -11,6 +12,9 @@ import org.greenrobot.eventbus.ThreadMode;
  * Created by zhoudaihui on 2016/6/29.
  */
 public class EventBusExample {
+
+    private static final String TAG = EventBusExample.class.getSimpleName();
+
     /**
      * 1. For using EventBus , you should first add the gradle dependency to the file 'build.gradle'
      * compile 'org.greenrobot:eventbus:3.0.0'
@@ -26,6 +30,8 @@ public class EventBusExample {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(MessageEvent event) {
         // TODO: 2016/6/29 handle the event
+        String msg = event.getMessage();
+        Log.d(TAG,"Received msg:"+msg);
     }
 
     /**
