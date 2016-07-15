@@ -35,4 +35,7 @@ dependencies {
 
     //greenDao
     compile 'org.greenrobot:greendao:2.2.1'
+
+    //Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
 }
