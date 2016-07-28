@@ -23,6 +23,19 @@ public class RetrofitExample {
 
         Message.obtain();
 
+        //Writing down some fucking codes will be your mission to be finished.
+        // TODO: 2016/7/20 You will never understand how to do it.  
+        /***
+         * My life is brilliant.
+         * My life is brilliant.
+         * My Love is pure.
+         * You are beautiful.
+         * You are beautiful.
+         * You are beautiful. It's true.
+         * I saw your face in a crowded place.
+         * And I don't know what to do.
+         */
+        // For something you like
 
     }
 }
